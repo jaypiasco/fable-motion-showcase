@@ -1,0 +1,35 @@
+{
+  "preset_id": "filipino_characters",
+  "name": "Filipino Folklore & Cultural Tales (Stylized 3D Feature)",
+  "engine_name": "FILIPINO FOLKLORE & CULTURAL DRAMA ENGINE",
+  "target_platforms": "TikTok, YouTube Shorts, Facebook Reels (60–90 seconds)",
+  "aspect_ratio": "9:16",
+  "character_aesthetic": "Warm, expressive 3D animated characters celebrating Filipino cultural identity, folklore archetypes, warm golden-brown skin tones, expressive dark eyes, and authentic cultural anatomy.",
+  "wardrobe_contrast": "Intricately embroidered Barong Tagalog, elegant Baro't Saya, colorful modern streetwear, and handwoven indigenous textile accents (Inabel, Yakan).",
+  "environment": "Lush tropical barangay coastlines, ancestral wooden Bahay na Bato verandas, misty provincial rice terraces, and bustling modern Manila night markets.",
+  "story_tropes": "Bayanihan communal solidarity, heartfelt family reunions, encounters with mythical Diwata protectors, respect for ancestral heritage, and wholesome overcoming-the-odds triumphs.",
+  "audio_and_dialogue": "Warm emotional cadence, bilingual conversational delivery (Tagalog/English), acoustic guitar or kulintang accents, authentic natural room tone.",
+  "studio_lighting": "Golden hour tropical sunbeams, warm ambient bounce, lush foliage rim lighting, cinematic dusk shadows.",
+  "render_quality": "High-fidelity 3D animated feature rendering, photorealistic fabric weaves and lace details, Unreal Engine 5 render style, 8k resolution.",
+  "mandatory_cta": "Follow for more heartwarming Filipino cultural stories and folklore",
+  "sample_characters": [
+    {
+      "name": "Lolo Mateo",
+      "species": "Human Elder",
+      "archetype": "Wise Village Storyteller"
+    },
+    {
+      "name": "Tala the Diwata",
+      "species": "Nature Spirit",
+      "archetype": "Forest Guardian"
+    },
+    {
+      "name": "Danilo Cruz",
+      "species": "Human Protagonist",
+      "archetype": "Hardworking Overseas Returnee"
+    }
+  ],
+  "audio_profile": "Audio: Natural, warm voice with authentic cultural cadence, gentle ambient breeze, distant cicadas, and subtle room acoustics.",
+  "character_naming_convention": "Authentic Filipino names reflecting regional heritage (e.g., 'Danilo Cruz', 'Elena Santos', 'Mateo Reyes', 'Tala Morales').",
+  "pipeline_iteration_architecture": "Standard 5-phase story execution generating cultural story beats, character consistency portraits, keyframe stills, Veo video dynamics, and word-level karaoke subtitles."
+}

@@ -1,0 +1,87 @@
+# =====================================================================
+# Secrets & Environment Configurations
+# =====================================================================
+.env
+.env*.local
+.env.development
+.env.test
+.env.production
+!.env.example
+
+# =====================================================================
+# Python
+# =====================================================================
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.pytest_cache/
+.coverage
+htmlcov/
+.mypy_cache/
+.ruff_cache/
+.venv/
+venv/
+env/
+ENV/
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+*.egg-info/
+.installed.cfg
+*.egg
+
+# =====================================================================
+# Node & Frontend (Next.js)
+# =====================================================================
+node_modules/
+*/node_modules/
+.next/
+frontend/.next/
+frontend/out/
+*.tsbuildinfo
+frontend/tsconfig.tsbuildinfo
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+.pnpm-store/
+.vercel
+
+# =====================================================================
+# Pipeline Runtime Data, Logs & Generated Media Archives
+# =====================================================================
+logs/*
+!logs/.gitkeep
+archive/*
+!archive/.gitkeep
+queue/*
+!queue/.gitkeep
+state/*
+!state/.gitkeep
+*.log
+
+# =====================================================================
+# Scratch & Temporary Files
+# =====================================================================
+scratch*
+*.scratch
+frontend/scratch_page.html
+frontend/extracted_code.tsx
+temp/
+tmp/
+
+# =====================================================================
+# OS & Editor Files
+# =====================================================================
+.worktrees/
+.DS_Store
+Thumbs.db
+desktop.ini
+.idea/
+.trae/
+*.swp
+*~

@@ -1,0 +1,35 @@
+{
+  "preset_id": "fruit_characters",
+  "name": "Stylized 3D Animated Fruit & Garden Tales",
+  "engine_name": "GENERIC 3D FRUIT ANIMATION ENGINE",
+  "target_platforms": "TikTok, YouTube Shorts, Instagram Reels (60–90 seconds)",
+  "aspect_ratio": "9:16",
+  "character_aesthetic": "Stylized 3D anthropomorphic fruit characters (e.g., Orange, Apple, Lemon, Berry) with natural organic peel textures, large expressive animated Pixar-style eyes with glossy reflections, and friendly expressive facial features carved naturally into the fruit surface.",
+  "wardrobe_contrast": "Playful modern outfits: casual denim jackets, colorful athletic sneakers, cozy hoodies, and tiny tailored blazers draped over fruit bodies.",
+  "environment": "Sunlit orchard terraces, vibrant market cafes, modern kitchen counter studios, and colorful community gardens.",
+  "story_tropes": "Lighthearted garden adventures, wholesome friendship misunderstandings, playful kitchen contests, and uplifting teamwork victories.",
+  "audio_and_dialogue": "Lively conversational delivery, subtle acoustic kitchen room tone, playful sound effect cues, natural room acoustics.",
+  "studio_lighting": "Bright cinematic 3-point studio lighting, glossy specular highlights across peel rinds, warm soft rim lights.",
+  "render_quality": "Pixar-style glossy 3D animation, subsurface fruit peel scattering, Octane Render, 8k resolution.",
+  "mandatory_cta": "Visit fablemotion.ai and create your own AI short stories",
+  "sample_characters": [
+    {
+      "name": "Oliver Orange",
+      "species": "Navel Orange",
+      "archetype": "Enthusiastic Garden Host"
+    },
+    {
+      "name": "Clara Crisp",
+      "species": "Honeycrisp Apple",
+      "archetype": "Ambitious Market Manager"
+    },
+    {
+      "name": "Sammy Berry",
+      "species": "Wild Blackberry",
+      "archetype": "Clever Tech Innovator"
+    }
+  ],
+  "audio_profile": "Audio: Natural, warm, conversational voice with clear room acoustics and subtle background ambient tone. No background music. (no subtitles)",
+  "character_naming_convention": "Friendly authentic human names paired with fruit-inspired surnames (e.g., 'Oliver Orange', 'Clara Crisp', 'Sammy Berry').",
+  "pipeline_iteration_architecture": "Standard 5-phase story execution generating scene breakdown, character bibles, keyframe renders, Veo video dynamics, and word-level karaoke captioning."
+}

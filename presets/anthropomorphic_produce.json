@@ -1,0 +1,25 @@
+{
+  "preset_id": "anthropomorphic_produce",
+  "name": "Generic Stylized 3D Animated Fruit & Garden Tales (Placeholder)",
+  "engine_name": "ANTHROPOMORPHIC 3D PRODUCE & FRUIT DRAMA ENGINE (PLACEHOLDER)",
+  "target_platforms": "TikTok, YouTube Shorts, Instagram Reels (60–90 seconds)",
+  "aspect_ratio": "9:16",
+  "character_aesthetic": "Stylized 3D animated fruit characters with organic peel textures, large expressive animated Pixar-style eyes with glossy reflections, and friendly expressive facial features carved naturally into the fruit surface.",
+  "wardrobe_contrast": "Playful modern outfits: casual denim jackets, colorful athletic sneakers, cozy hoodies, and tailored blazers draped over fruit bodies.",
+  "environment": "Sunlit orchard terraces, vibrant market cafes, modern kitchen counter studios, and colorful community gardens.",
+  "story_tropes": "Lighthearted garden adventures, wholesome friendship misunderstandings, playful kitchen contests, and uplifting teamwork victories.",
+  "audio_and_dialogue": "Lively conversational delivery, subtle acoustic kitchen room tone, playful sound effect cues, natural room acoustics.",
+  "studio_lighting": "Bright cinematic 3-point studio lighting, glossy specular highlights across peel rinds, warm soft rim lights.",
+  "render_quality": "Pixar-style glossy 3D animation, subsurface fruit peel scattering, Octane Render, 8k resolution.",
+  "mandatory_cta": "Visit fablemotion.ai and create your own AI short stories",
+  "sample_species": [
+    {
+      "species": "Ripe Banana",
+      "color": "Rich Yellow with Tiny Brown Speckles",
+      "archetype": "Tech Executive"
+    }
+  ],
+  "audio_profile": "Audio: Natural, warm, conversational voice with clear room acoustics and subtle background ambient tone. No background music. (no subtitles)",
+  "character_naming_convention": "Friendly authentic human names paired with fruit-inspired surnames (e.g., 'Arthur Bananier').",
+  "pipeline_iteration_architecture": "Standard 5-phase story execution generating scene breakdown, character bibles, keyframe renders, Veo video dynamics, and word-level karaoke captioning."
+}

@@ -1,0 +1,207 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "AIVideoStoryPipelineState",
+  "type": "object",
+  "required": [
+    "story_id",
+    "story_slug",
+    "prompt",
+    "created_at",
+    "updated_at",
+    "status",
+    "current_phase",
+    "archive_dir",
+    "phases"
+  ],
+  "properties": {
+    "story_id": {
+      "type": "string",
+      "description": "Unique story identifier (e.g. story_20260820_115500_cyberpunk)"
+    },
+    "story_slug": {
+      "type": "string",
+      "description": "URL/filesystem-safe slug for story naming"
+    },
+    "prompt": {
+      "type": "string",
+      "description": "Initial input concept or prompt"
+    },
+    "created_at": {
+      "type": "string",
+      "format": "date-time"
+    },
+    "updated_at": {
+      "type": "string",
+      "format": "date-time"
+    },
+    "status": {
+      "type": "string",
+      "enum": ["pending", "in_progress", "paused", "completed", "failed"]
+    },
+    "current_phase": {
+      "type": "string",
+      "enum": [
+        "phase_1_script",
+        "phase_2_characters",
+        "phase_3_images",
+        "phase_4_animation_prompts",
+        "phase_5_video_generation",
+        "assembly",
+        "completed"
+      ]
+    },
+    "archive_dir": {
+      "type": "string",
+      "description": "Absolute or relative path to story archive directory"
+    },
+    "retry_count": {
+      "type": "integer",
+      "default": 0
+    },
+    "last_error": {
+      "type": ["string", "null"],
+      "default": null
+    },
+    "phases": {
+      "type": "object",
+      "required": [
+        "phase_1_script",
+        "phase_2_characters",
+        "phase_3_images",
+        "phase_4_animation_prompts",
+        "phase_5_video_generation",
+        "assembly"
+      ],
+      "properties": {
+        "phase_1_script": {
+          "type": "object",
+          "properties": {
+            "status": { "type": "string", "enum": ["pending", "in_progress", "completed", "failed"] },
+            "completed_at": { "type": ["string", "null"] },
+            "data": {
+              "type": "object",
+              "properties": {
+                "title": { "type": "string" },
+                "logline": { "type": "string" },
+                "genre": { "type": "string" },
+                "scenes": {
+                  "type": "array",
+                  "items": {
+                    "type": "object",
+                    "properties": {
+                      "scene_id": { "type": "integer" },
+                      "shot_type": { "type": "string" },
+                      "visual_description": { "type": "string" },
+                      "characters": { "type": "array", "items": { "type": "string" } },
+                      "narration": { "type": "string" },
+                      "sfx_cue": { "type": "string" },
+                      "duration_seconds": { "type": "number" }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        },
+        "phase_2_characters": {
+          "type": "object",
+          "properties": {
+            "status": { "type": "string", "enum": ["pending", "in_progress", "completed", "failed"] },
+            "completed_at": { "type": ["string", "null"] },
+            "data": {
+              "type": "object",
+              "properties": {
+                "characters": {
+                  "type": "array",
+                  "items": {
+                    "type": "object",
+                    "properties": {
+                      "name": { "type": "string" },
+                      "visual_anchor": { "type": "string" },
+                      "costume": { "type": "string" },
+                      "style_seed_prompt": { "type": "string" }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        },
+        "phase_3_images": {
+          "type": "object",
+          "properties": {
+            "status": { "type": "string", "enum": ["pending", "in_progress", "completed", "failed"] },
+            "completed_at": { "type": ["string", "null"] },
+            "items": {
+              "type": "array",
+              "items": {
+                "type": "object",
+                "properties": {
+                  "scene_id": { "type": "integer" },
+                  "prompt": { "type": "string" },
+                  "image_path": { "type": "string" },
+                  "status": { "type": "string", "enum": ["pending", "completed", "failed"] },
+                  "completed_at": { "type": ["string", "null"] }
+                }
+              }
+            }
+          }
+        },
+        "phase_4_animation_prompts": {
+          "type": "object",
+          "properties": {
+            "status": { "type": "string", "enum": ["pending", "in_progress", "completed", "failed"] },
+            "completed_at": { "type": ["string", "null"] },
+            "items": {
+              "type": "array",
+              "items": {
+                "type": "object",
+                "properties": {
+                  "scene_id": { "type": "integer" },
+                  "motion_prompt": { "type": "string" },
+                  "camera_dynamics": { "type": "string" },
+                  "duration": { "type": "number" },
+                  "status": { "type": "string", "enum": ["pending", "completed", "failed"] },
+                  "completed_at": { "type": ["string", "null"] }
+                }
+              }
+            }
+          }
+        },
+        "phase_5_video_generation": {
+          "type": "object",
+          "properties": {
+            "status": { "type": "string", "enum": ["pending", "in_progress", "completed", "failed"] },
+            "completed_at": { "type": ["string", "null"] },
+            "items": {
+              "type": "array",
+              "items": {
+                "type": "object",
+                "properties": {
+                  "scene_id": { "type": "integer" },
+                  "job_id": { "type": ["string", "null"] },
+                  "video_path": { "type": "string" },
+                  "status": { "type": "string", "enum": ["pending", "running", "completed", "failed"] },
+                  "completed_at": { "type": ["string", "null"] }
+                }
+              }
+            }
+          }
+        },
+        "assembly": {
+          "type": "object",
+          "properties": {
+            "status": { "type": "string", "enum": ["pending", "in_progress", "completed", "failed"] },
+            "completed_at": { "type": ["string", "null"] },
+            "clips_manifest_path": { "type": "string" },
+            "merged_video_path": { "type": "string" },
+            "voiceover_path": { "type": ["string", "null"] },
+            "final_video_path": { "type": "string" },
+            "subtitles_path": { "type": ["string", "null"] },
+            "captioned_video_path": { "type": ["string", "null"] }
+          }
+        }
+      }
+    }
+  }
+}

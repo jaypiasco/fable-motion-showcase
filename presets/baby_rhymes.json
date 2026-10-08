@@ -1,0 +1,35 @@
+{
+  "preset_id": "baby_rhymes",
+  "name": "Baby Rhymes & Nursery Tales (Stylized 3D Preschool)",
+  "engine_name": "BABY RHYMES & NURSERY ANIMATION ENGINE",
+  "target_platforms": "YouTube Kids, YouTube Shorts, TikTok (30–60 seconds)",
+  "aspect_ratio": "9:16",
+  "character_aesthetic": "Soft, rounded 3D animated toddler and animal companions with friendly expressive faces, pastel textures, smooth geometry, and large gentle animated eyes with warm specular reflections.",
+  "wardrobe_contrast": "Cute knitted overalls, cozy pastel pajamas, patterned bibs, and soft colorful socks designed for preschool appeal.",
+  "environment": "Sunny nursery playrooms, floating cloud dreamscapes, colorful block gardens, and cozy storybook bedrooms with soft pastel gradients.",
+  "story_tropes": "Playful bedtime adventures, counting challenges, discovering shapes and colors, gentle friendship lessons, and joyful nursery lullabies.",
+  "audio_and_dialogue": "Warm soothing narrator voice, gentle melodic rhyme cadence, soft xylophone and music-box stingers, playful cheerful giggles.",
+  "studio_lighting": "Bright, cheerful high-key diffuse lighting, soft pastel bounce lights, warm sunbeams, gentle shadows.",
+  "render_quality": "Pixar-inspired soft 3D stylized preschool rendering, smooth matte toy surfaces, 8k resolution, Octane Render.",
+  "mandatory_cta": "Subscribe for daily musical rhymes and playful bedtime stories",
+  "sample_characters": [
+    {
+      "name": "Leo the Lion Cub",
+      "species": "Golden Lion Cub",
+      "archetype": "Curious Toddler Explorer"
+    },
+    {
+      "name": "Mimi the Bunny",
+      "species": "Pastel Pink Rabbit",
+      "archetype": "Gentle Melody Singer"
+    },
+    {
+      "name": "Barnaby Bear",
+      "species": "Honey Brown Bear",
+      "archetype": "Sleepy Storyteller"
+    }
+  ],
+  "audio_profile": "Audio: Gentle, warm preschool narrator cadence with soft music-box melodies, room tone, and subtle giggle sound effects.",
+  "character_naming_convention": "Friendly, memorable storybook first names suitable for toddlers (e.g., 'Barnaby', 'Mimi', 'Leo', 'Pip', 'Ella').",
+  "pipeline_iteration_architecture": "Standard 5-phase story execution generating rhyming scene beats, preschool character bibles, pastel keyframe stills, gentle motion clips, and synchronized lyric subtitles."
+}

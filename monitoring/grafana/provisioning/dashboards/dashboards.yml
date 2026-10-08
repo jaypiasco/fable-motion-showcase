@@ -1,0 +1,6 @@
+apiVersion: 1
+providers:
+  - name: story-pipeline
+    type: file
+    options:
+      path: /var/lib/grafana/dashboards

@@ -1,0 +1,41 @@
+{
+  "name": "ai-stories",
+  "version": "1.0.0",
+  "description": "Automated 5-Phase AI Video Story Pipeline with Nano Banana Pro & Veo 3.1 Fast",
+  "main": "orchestrator.py",
+  "scripts": {
+    "start": "pm2 start ecosystem.config.js",
+    "stop": "pm2 stop ai-story-daemon",
+    "restart": "pm2 restart ai-story-daemon",
+    "logs": "pm2 logs ai-story-daemon",
+    "status": "pm2 status",
+    "test": "pytest tests/unit -v",
+    "test:integration": "pytest tests/integration -v",
+    "test:all": "pytest tests/ -v",
+    "evals": "python evals/run_evals.py --mock",
+    "build:package": "python -m build",
+    "queue:list": "python orchestrator.py queue list",
+    "queue:add": "python orchestrator.py queue add",
+    "pipeline:status": "python orchestrator.py status",
+    "ui": "python server.py",
+    "dev": "python server.py",
+    "dev:ui": "cd frontend && npm run dev",
+    "build:ui": "cd frontend && npm run build && Robocopy out ..\\ui /E /IS /IT"
+  },
+  "keywords": [
+    "ai-video",
+    "veo-3.1",
+    "nano-banana-pro",
+    "opencode",
+    "ffmpeg",
+    "storytelling"
+  ],
+  "author": "John Paul D. Elias",
+  "license": "UNLICENSED",
+  "dependencies": {
+    "clsx": "^2.1.1",
+    "framer-motion": "^13.1.1",
+    "lucide-react": "^1.38.0",
+    "tailwind-merge": "^3.6.0"
+  }
+}
