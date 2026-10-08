@@ -1,0 +1,34 @@
+Copyright (c) 2026 John Paul D. Elias. All rights reserved.
+
+Source-Available / Showcase License (Non-Commercial & Evaluation Only)
+
+Permission is hereby granted to any person or entity viewing this repository,
+strictly for personal inspection, portfolio review, hiring evaluation, and non-commercial educational review,
+subject to the following conditions:
+
+1. RESERVATION OF RIGHTS:
+   Except as expressly stated herein, all title, ownership rights, intellectual
+   property, and proprietary rights in and to the software, models, prompts,
+   and architecture remain exclusively with the author.
+
+2. NON-COMMERCIAL / NO DERIVATIVE USE:
+   You may NOT:
+   a. Use, copy, adapt, modify, merge, publish, distribute, sublicense, sell, or
+      commercially exploit the software, source code, prompt architecture, or any part thereof.
+   b. Train proprietary commercial artificial intelligence or machine learning models
+      directly on this codebase or its proprietary prompt structures without express written consent.
+   c. Deploy or host this software, services, or derived products as a commercial service (SaaS),
+      API, or production application.
+
+3. RECRUITER & EVALUATOR PERMISSION:
+   Technical recruiters, hiring managers, and interviewers are granted permission to browse,
+   review, clone, and execute this repository locally solely for the purpose of assessing the author's
+   technical competence, engineering standards, and employment suitability.
+
+4. NO WARRANTY:
+   THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+   IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+   FITNESS FOR A PARTICULAR PURPOSE, AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+   AUTHOR BE LIABLE FOR ANY CLAIM, DAMAGES, OR OTHER LIABILITY, WHETHER IN AN
+   ACTION OF CONTRACT, TORT, OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION
+   WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.

@@ -1,0 +1,27 @@
+{
+  "preset_id": "faceted_crystal",
+  "name": "Viral Faceted-Crystal 3D Drama Engine",
+  "engine_name": "VIRAL FACETED-CRYSTAL 3D DRAMA ENGINE",
+  "target_platforms": "TikTok, YouTube Shorts, Instagram Reels (60\u201390 seconds)",
+  "aspect_ratio": "9:16",
+  "character_aesthetic": "Stylized 3D faceted crystal/gemstone humanoid characters (e.g., Diamond, Polished Gold, Blue Sapphire, Iridescent Silver, Rose Quartz, Jet Obsidian). Translucent and reflective low-poly geometric skin shaders with internal refractive caustics, glowing expressive eyes, contrasted against expressive, animated facial features.",
+  "wardrobe_contrast": "Hyper-realistic, high-fashion, and detailed everyday textiles (e.g., oversized knit hoodies, boned lace corsets, bespoke tuxedos, silk lounge sets, sharp wool pinstripe suits) draped over geometric crystalline bodies.",
+  "environment": "Cinematic, ultra-luxurious, realistic environments (e.g., marble-floored neoclassical mansions, customized Rolls-Royce interiors, opulent dressing rooms, neon-lit luxury boardrooms, penthouses).",
+  "story_tropes": "Extreme soap-opera melodrama, cheating scandals, secret parentage, unfair family treatment, class divides (maid vs. billionaire), forced physical restrictions, and sudden revenge glow-ups.",
+  "audio_and_dialogue": "Audio: Natural, warm, grounded voice with realistic room acoustics and subtle breathing. Background sound includes soft ambient rain outside and a quiet room tone. No background music. (no subtitles). Character speech must use explicit quotation marks or syntax like Character says: \"...\". Vocal delivery & tone must include descriptors like conversational, warm, hushed tone, subtle pause, or grounded delivery. Always add ambient audio (quiet room tone, distant traffic, soft hum of an AC unit) for Veo single-pass video/audio generation. Keep speech short: 10 to 18 words, spoken naturally over 4 to 6 seconds within Veo's 8-second generation length.",
+  "studio_lighting": "3-point studio lighting setup, high-contrast rim lighting, volumetric light rays, soft diffuse fill, specular highlights glistening across geometric crystal edges, deep cinematic shadows",
+  "render_quality": "cinematic volumetric lighting, 8k resolution, Unreal Engine 5 render style, hyper-detailed textures, Octane Render, ray tracing, photorealistic caustics",
+  "mandatory_cta": "Visit fablemotion.ai and create your own ai short stories",
+  "sample_materials": [
+    "Faceted Blue Sapphire Crystal",
+    "Polished 24K Gold Alloy",
+    "Faceted Diamond Crystal",
+    "Iridescent Silver Alloy",
+    "Rose Quartz Crystal",
+    "Faceted Jet Obsidian Crystal",
+    "Emerald Gemstone"
+  ],
+  "audio_profile": "Audio: Natural, warm, grounded voice with realistic room acoustics and subtle breathing. Background sound includes soft ambient rain outside and a quiet room tone. No background music. (no subtitles)",
+  "character_naming_convention": "MANDATORY: Every character MUST be given an authentic, realistic human first and last name (e.g. 'Julian Corvus', 'Elena Vance', 'Marcus Sterling', 'Victoria Chen', 'Damian Cross', 'Seraphina Reed'). NEVER name characters after gemstones, minerals, or materials (e.g., NEVER use 'Obsidian', 'Sapphire', 'Emerald', 'Ruby', 'Diamond', or 'Gold' as character names). The crystal material defines their visual shader, while their character name must always be a distinguished, realistic human name.",
+  "pipeline_iteration_architecture": "Phase 1 generates the full 10-14 scene script with authentic human character names. Phase 2 generates character reference portraits stored in /assets for all clips. The engine then iterates per clip (Scene 1 to Scene 12): Phase 3 creates the scene keyframe using /assets character references -> Phase 4 waits for Phase 3 keyframe and renders the video clip with character dialogue -> Phase 5 applies dynamic captions to the clip. On the final scene (Scene N, 10 to 14 scenes), Phase 5 captions the final clip and merges all clips into the master story video."
+}

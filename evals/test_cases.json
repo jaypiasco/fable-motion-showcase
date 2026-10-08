@@ -1,0 +1,98 @@
+[
+  {
+    "id": "tc_produce_soap_opera_retention",
+    "name": "Viral 3D Produce Soap Opera: Character Continuity & Hook Retention",
+    "story_prompt": "A high-stakes soap opera where Arthur, an executive banana in a bespoke navy blazer, discovers a secret prenuptial agreement hidden by his fiancee Elena inside their penthouse dressing room.",
+    "character_profile": {
+      "name": "Arthur",
+      "visual_identity": "weathered yellow peel, bespoke navy blazer, crisp white dress shirt, large glossy animated eyes"
+    },
+    "expected_criteria": {
+      "min_scenes": 3,
+      "max_scenes": 12,
+      "must_contain_keywords": [
+        "Arthur",
+        "blazer",
+        "agreement"
+      ],
+      "require_camera_directions": true,
+      "strict_dialogue_pacing": true
+    }
+  },
+  {
+    "id": "tc_fitness_underdog_revenge",
+    "name": "Underdog Fitness Revenge: Dialogue Conciseness & No-God Tropes",
+    "story_prompt": "An underestimated garlic athlete steps up to the championship platform after months of secret training, confronting the gym powerhouse.",
+    "character_profile": {
+      "name": "Garret",
+      "visual_identity": "layered white garlic bulb head, athletic compression performance gear, focused determined expression"
+    },
+    "expected_criteria": {
+      "min_scenes": 3,
+      "max_scenes": 10,
+      "must_contain_keywords": [
+        "Garret",
+        "compression",
+        "platform"
+      ],
+      "require_camera_directions": true,
+      "strict_dialogue_pacing": true
+    }
+  },
+  {
+    "id": "tc_moral_parable_luxury_exile",
+    "name": "Moral Parable: Multi-Act Environment Arc & Emotional Stakes",
+    "story_prompt": "A vulnerable peach mother in lived-in knitwear is evicted into a rain-drenched bus shelter before confronting a wealthy benefactor in a neoclassical mansion.",
+    "character_profile": {
+      "name": "Penelope",
+      "visual_identity": "soft velvet peach exterior, oversized knitted shawl, glossy tearful eyes"
+    },
+    "expected_criteria": {
+      "min_scenes": 4,
+      "max_scenes": 10,
+      "must_contain_keywords": [
+        "Penelope",
+        "knitwear",
+        "shelter"
+      ],
+      "require_camera_directions": true
+    }
+  },
+  {
+    "id": "tc_social_distribution_and_cta",
+    "name": "Phase 5 Social Distribution: Multi-Platform Metadata & Viral CTA",
+    "story_prompt": "Distribution package generation for high-retention short drama featuring YouTube Shorts tags, TikTok engagement caption, and Instagram Reels question hook.",
+    "character_profile": {
+      "name": "Arthur",
+      "visual_identity": "bespoke navy blazer, glossy animated eyes"
+    },
+    "expected_criteria": {
+      "min_scenes": 3,
+      "max_scenes": 6,
+      "must_contain_keywords": [
+        "Arthur",
+        "fablemotion.ai"
+      ],
+      "require_camera_directions": true
+    }
+  },
+  {
+    "id": "tc_sci_fi_coherence",
+    "name": "Sci-Fi Character Continuity & Schema Verification",
+    "story_prompt": "A lone robotic gardener on an abandoned terraforming station discovers an unexpected biological blossom in the reactor core.",
+    "character_profile": {
+      "name": "Unit-7",
+      "visual_identity": "weathered bronze chassis, cracked optic sensor, green moss on left arm"
+    },
+    "expected_criteria": {
+      "min_scenes": 3,
+      "max_scenes": 6,
+      "must_contain_keywords": [
+        "Unit-7",
+        "chassis",
+        "blossom"
+      ],
+      "require_camera_directions": true
+    }
+  }
+]
