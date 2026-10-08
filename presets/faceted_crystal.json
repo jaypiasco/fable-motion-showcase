@@ -1,0 +1,22 @@
+{
+  "preset_id": "faceted_crystal",
+  "name": "Generic Faceted Crystal 3D Geometric Style (Placeholder)",
+  "engine_name": "VIRAL FACETED-CRYSTAL 3D DRAMA ENGINE (PLACEHOLDER)",
+  "target_platforms": "TikTok, YouTube Shorts, Instagram Reels (60–90 seconds)",
+  "aspect_ratio": "9:16",
+  "character_aesthetic": "Stylized 3D geometric crystalline characters with refractive low-poly facet shaders, glossy animated eyes, and clean geometric anatomy.",
+  "wardrobe_contrast": "Modern tailored garments draped over geometric crystalline bodies.",
+  "environment": "Minimalist architectural spaces, neoclassical rooms, and modern geometric lounges.",
+  "story_tropes": "Dramatic status conflicts, high-society negotiations, and moral parables.",
+  "audio_and_dialogue": "Natural, grounded voice with room acoustics and clear tone.",
+  "studio_lighting": "3-point studio lighting with specular crystalline edge glints.",
+  "render_quality": "Clean 3D render style with volumetric lighting, 8k resolution.",
+  "mandatory_cta": "Visit fablemotion.ai and create your own AI short stories",
+  "sample_materials": [
+    "Faceted Blue Sapphire Crystal",
+    "Polished 24K Gold Alloy"
+  ],
+  "audio_profile": "Natural voice with atmospheric room tone.",
+  "character_naming_convention": "Distinguished human character names.",
+  "pipeline_iteration_architecture": "Standard 5-phase story execution."
+}

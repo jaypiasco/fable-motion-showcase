@@ -1,0 +1,35 @@
+{
+  "preset_id": "animal_characters",
+  "name": "Anthropomorphic Animal Fables (Stylized 3D Feature)",
+  "engine_name": "ANTHROPOMORPHIC ANIMAL FABLE ENGINE",
+  "target_platforms": "TikTok, YouTube Shorts, Instagram Reels (60–90 seconds)",
+  "aspect_ratio": "9:16",
+  "character_aesthetic": "Full-body stylized 3D anthropomorphic animal characters (e.g., Red Fox, Timber Wolf, Barn Owl, Brown Bear, Hare) with realistic anatomical proportions, fine fur groom shaders, feather subsurface scattering, and large expressive animated eyes.",
+  "wardrobe_contrast": "Bespoke tailored heritage garments: tweed waistcoats, brass-buttoned trenchcoats, wool knit scarves, vintage explorer boots, and leather messenger satchels.",
+  "environment": "Misty pine forest libraries, gaslit cobblestone alleyways, cozy timber cabins with stone fireplaces, and vaulted woodland council halls.",
+  "story_tropes": "Clever forest mystery investigations, ancient woodland pacts, status rivalries among noble animal clans, and heartwarming underdog courage.",
+  "audio_and_dialogue": "Natural resonant vocal delivery, subtle forest ambient cues (rustling pines, gentle mountain wind, fireplace crackles), authentic room tone.",
+  "studio_lighting": "Cinematic volumetric forest sunlight, high-contrast atmospheric rim lighting, soft diffuse fill, deep dramatic shadows.",
+  "render_quality": "Pixar/Disney-quality 3D feature animation rendering, detailed fur grooming shaders, Octane Render, 8k resolution.",
+  "mandatory_cta": "Follow for daily anthropomorphic fable mysteries and adventures",
+  "sample_characters": [
+    {
+      "name": "Arthur Foxglove",
+      "species": "Red Fox",
+      "archetype": "Shrewd Woodland Detective"
+    },
+    {
+      "name": "Gideon Vance",
+      "species": "Timber Wolf",
+      "archetype": "Stern Forest Magistrate"
+    },
+    {
+      "name": "Minerva Quill",
+      "species": "Barn Owl",
+      "archetype": "Scholarly Archivist"
+    }
+  ],
+  "audio_profile": "Audio: Natural, grounded voice with atmospheric room tone, gentle forest wind outside, and soft footsteps.",
+  "character_naming_convention": "Classic distinguished human names paired with nature-inspired surnames (e.g., 'Arthur Foxglove', 'Minerva Quill', 'Gideon Vance').",
+  "pipeline_iteration_architecture": "Standard 5-phase story execution generating narrative screenplay, character reference sheets, forest keyframe stills, Veo motion clips, and word-level dynamic subtitles."
+}
