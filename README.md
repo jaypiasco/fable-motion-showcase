@@ -33,11 +33,11 @@ An automated, fault-tolerant enterprise pipeline for vertical short-form cinema 
 Watch the complete pipeline in action—from screenplay conception, character bible synthesis, and keyframe rendering, through Veo 3.1 video clip generation, Faster-Whisper word-level subtitle burning, and the interactive Web Studio:
 
 <div align="center">
-  <a href="https://github.com/jaypiasco/fable-motion-showcase/raw/main/demo/FableMotion_demo.mp4">
+  <a href="https://youtu.be/KIh25w4ehPQ">
     <img src="demo/demo_preview.gif" alt="Fable Motion Studio Walkthrough" width="850" />
   </a>
   <p>
-    <em>Click preview above to stream in browser &bull; <a href="https://github.com/jaypiasco/fable-motion-showcase/raw/main/demo/FableMotion_demo.mp4"><strong>Stream Demo Video (MP4)</strong></a> &bull; <a href="https://github.com/jaypiasco/fable-motion-showcase/releases/download/v1.0.0/FableMotion_Full_Demo.mp4"><strong>Download Full-Res 1080p Master (108 MB)</strong></a></em>
+    <em>Click preview above to stream on YouTube &bull; <a href="https://youtu.be/KIh25w4ehPQ"><strong>Watch Demo on YouTube</strong></a> &bull; <a href="https://github.com/jaypiasco/fable-motion-showcase/raw/main/demo/FableMotion_demo.mp4"><strong>Stream Raw MP4</strong></a></em>
   </p>
 </div>
 
