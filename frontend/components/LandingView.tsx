@@ -9,7 +9,7 @@ import { Fluid } from './ui/fluid';
 import { supabase } from '../lib/supabase';
 import type { User } from '@supabase/supabase-js';
 
-const DEMO_YOUTUBE_ID = process.env.NEXT_PUBLIC_DEMO_YOUTUBE_ID || 'Cy-lVx4YlNw';
+const DEMO_YOUTUBE_ID = process.env.NEXT_PUBLIC_DEMO_YOUTUBE_ID || 'KIh25w4ehPQ';
 const DEMO_EMBED_URL = `https://www.youtube-nocookie.com/embed/${DEMO_YOUTUBE_ID}?rel=0&modestbranding=1`;
 const DEMO_MODAL_EMBED_URL = `https://www.youtube-nocookie.com/embed/${DEMO_YOUTUBE_ID}?autoplay=1&rel=0&modestbranding=1`;
 
