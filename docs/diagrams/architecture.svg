@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg viewBox="0 0 960 600" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="fable-arch-title fable-arch-desc" id="architecture-root">
+        <title id="fable-arch-title">Fable Motion 5-Phase Video Pipeline</title>
+        <desc id="fable-arch-desc">System architecture showing pre-production script and character bible generation feeding iterative scene synthesis across keyframes, Veo motion clips, and word-level captions, backed by atomic checkpointing and master FFmpeg delivery.</desc>
+        <defs>
+      <style>@import url('https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&amp;family=Geist:wght@400;500;600&amp;family=Geist+Mono:wght@400;500;600&amp;family=Noto+Serif:ital@0;1&amp;family=Noto+Sans+KR:wght@400;500;600&amp;family=Noto+Serif+KR:wght@400&amp;family=Noto+Sans+TC:wght@400;500;600&amp;family=Noto+Serif+TC:wght@400&amp;display=swap');
+      #architecture-root { --color-paper:   #15121b;
+      --color-ink:     #e7e0ee;
+      --color-muted:   #cbc3d7;
+      --color-accent:  #d0bcff;
+      --font-sans:     'Sora', system-ui, sans-serif;
+      --font-body:     'Hanken Grotesk', system-ui, sans-serif;
+      --font-mono:     'Geist Mono', ui-monospace, monospace; }
+      #architecture-root { font-family: var(--font-body); color: var(--color-ink); }
+      #architecture-root .diagram-container { width: 100%; overflow-x: auto; }
+      @media print {
+#architecture-root .diagram-container { overflow-x: visible; }
+}</style>
+          <marker id="architecture-arrow" markerWidth="8" markerHeight="6" refX="7" refY="3" orient="auto"><polygon points="0 0, 8 3, 0 6" fill="#cbc3d7"/></marker>
+          <marker id="architecture-arrow-accent" markerWidth="8" markerHeight="6" refX="7" refY="3" orient="auto"><polygon points="0 0, 8 3, 0 6" fill="#d0bcff"/></marker>
+          <marker id="architecture-arrow-link" markerWidth="8" markerHeight="6" refX="7" refY="3" orient="auto"><polygon points="0 0, 8 3, 0 6" fill="#4cd7f6"/></marker>
+        </defs>
+
+        <rect width="100%" height="100%" fill="#15121b"/>
+
+        <!-- Zones (drawn first) -->
+        <!-- Zone 1: Pre-Production -->
+        <rect x="36" y="36" width="264" height="320" rx="8" fill="#e7e0ee" stroke="#e7e0ee" stroke-width="0.8" fill-opacity="0.03" stroke-opacity="0.14"/>
+        <rect x="52" y="40" width="124" height="12" rx="2" fill="#15121b"/>
+        <text x="114" y="49" fill="#958ea0" font-size="7" font-family="'Geist Mono', ui-monospace, monospace" text-anchor="middle" letter-spacing="0.14em">PRE-PRODUCTION</text>
+
+        <!-- Zone 2: Iterative Scene Synthesis -->
+        <rect x="348" y="36" width="264" height="320" rx="8" fill="#e7e0ee" stroke="#e7e0ee" stroke-width="0.8" fill-opacity="0.03" stroke-opacity="0.14"/>
+        <rect x="364" y="40" width="172" height="12" rx="2" fill="#15121b"/>
+        <text x="450" y="49" fill="#958ea0" font-size="7" font-family="'Geist Mono', ui-monospace, monospace" text-anchor="middle" letter-spacing="0.14em">SCENE SYNTHESIS (1..N)</text>
+
+        <!-- Zone 3: Delivery & Fault Tolerance -->
+        <rect x="660" y="36" width="264" height="320" rx="8" fill="#e7e0ee" stroke="#e7e0ee" stroke-width="0.8" fill-opacity="0.03" stroke-opacity="0.14"/>
+        <rect x="676" y="40" width="164" height="12" rx="2" fill="#15121b"/>
+        <text x="758" y="49" fill="#958ea0" font-size="7" font-family="'Geist Mono', ui-monospace, monospace" text-anchor="middle" letter-spacing="0.14em">DELIVERY &amp; RESILIENCE</text>
+
+        <!-- Arrows (drawn before nodes) -->
+        <!-- DNA -> Phase 1 -->
+        <line x1="168" y1="120" x2="168" y2="156" stroke="#cbc3d7" stroke-width="1.2" marker-end="url(#architecture-arrow)"/>
+
+        <!-- Phase 1 -> Phase 2 -->
+        <line x1="168" y1="212" x2="168" y2="248" stroke="#d0bcff" stroke-width="1.4" marker-end="url(#architecture-arrow-accent)"/>
+
+        <!-- Phase 2 -> Phase 3 (cross-zone L-elbow) -->
+        <path d="M 276,280 H 316 Q 324,280 324,272 V 104 Q 324,96 332,96 H 368" fill="none" stroke="#d0bcff" stroke-width="1.4" marker-end="url(#architecture-arrow-accent)"/>
+
+        <!-- Phase 3 -> Phase 4 -->
+        <line x1="480" y1="120" x2="480" y2="156" stroke="#d0bcff" stroke-width="1.4" marker-end="url(#architecture-arrow-accent)"/>
+
+        <!-- Phase 4 -> Phase 5a -->
+        <line x1="480" y1="212" x2="480" y2="248" stroke="#d0bcff" stroke-width="1.4" marker-end="url(#architecture-arrow-accent)"/>
+
+        <!-- Phase 5a -> Phase 5b (cross-zone L-elbow) -->
+        <path d="M 588,280 H 628 Q 636,280 636,272 V 104 Q 636,96 644,96 H 680" fill="none" stroke="#4cd7f6" stroke-width="1.4" marker-end="url(#architecture-arrow-link)"/>
+
+        <!-- Dashed Checkpointing Bus: Zone 1 bottom -> State Engine -->
+        <path d="M 168,356 V 432 Q 168,440 176,440 H 680" fill="none" stroke="#958ea0" stroke-width="1" stroke-dasharray="4,3" marker-end="url(#architecture-arrow)"/>
+        <rect x="232" y="418" width="96" height="14" rx="2" fill="#15121b"/>
+        <text x="280" y="428" fill="#958ea0" font-size="8" font-family="'Geist Mono', ui-monospace, monospace" text-anchor="middle" letter-spacing="0.06em">CHECKPOINT</text>
+
+        <!-- Dashed Checkpointing Bus: Zone 2 bottom -> State Engine (joins above) -->
+        <path d="M 480,356 V 404 Q 480,412 488,412 H 744 Q 752,412 752,420 V 420" fill="none" stroke="#958ea0" stroke-width="1" stroke-dasharray="4,3" marker-end="url(#architecture-arrow)"/>
+
+        <!-- State Engine -> Zone 3 Master Delivery (resume/status) -->
+        <line x1="792" y1="424" x2="792" y2="124" stroke="#958ea0" stroke-width="1" stroke-dasharray="4,3" marker-end="url(#architecture-arrow)"/>
+        <rect x="802" y="256" width="60" height="14" rx="2" fill="#15121b"/>
+        <text x="832" y="266" fill="#958ea0" font-size="8" font-family="'Geist Mono', ui-monospace, monospace" text-anchor="middle" letter-spacing="0.06em">RESUME</text>
+
+        <!-- Nodes -->
+        <!-- Zone 1 Nodes -->
+        <!-- 1. Creative DNA & Archetypes -->
+        <rect x="60" y="68" width="216" height="52" rx="6" fill="#15121b"/>
+        <rect x="60" y="68" width="216" height="52" rx="6" fill="#211e28" stroke="#494454" stroke-width="1"/>
+        <text x="168" y="90" fill="#e7e0ee" font-size="12" font-weight="600" font-family="'Sora', system-ui, sans-serif" text-anchor="middle">Creative DNA &amp; Archetypes</text>
+        <text x="168" y="106" fill="#cbc3d7" font-size="9" font-family="'Geist Mono', ui-monospace, monospace" text-anchor="middle">presets.py · story_archetypes</text>
+
+        <!-- 2. Phase 1: Script & Beats -->
+        <rect x="60" y="160" width="216" height="52" rx="6" fill="#15121b"/>
+        <rect x="60" y="160" width="216" height="52" rx="6" fill="#211e28" stroke="#494454" stroke-width="1"/>
+        <text x="168" y="182" fill="#e7e0ee" font-size="12" font-weight="600" font-family="'Sora', system-ui, sans-serif" text-anchor="middle">Phase 1: Script &amp; Beats</text>
+        <text x="168" y="198" fill="#cbc3d7" font-size="9" font-family="'Geist Mono', ui-monospace, monospace" text-anchor="middle">Gemini 3.5 Flash-Lite · 10-14 scenes</text>
+
+        <!-- 3. Phase 2: Character Bibles -->
+        <rect x="60" y="252" width="216" height="52" rx="6" fill="#15121b"/>
+        <rect x="60" y="252" width="216" height="52" rx="6" fill="#211e28" stroke="#494454" stroke-width="1"/>
+        <text x="168" y="274" fill="#e7e0ee" font-size="12" font-weight="600" font-family="'Sora', system-ui, sans-serif" text-anchor="middle">Phase 2: Character Bibles</text>
+        <text x="168" y="290" fill="#cbc3d7" font-size="9" font-family="'Geist Mono', ui-monospace, monospace" text-anchor="middle">Imagen 3 · 9:16 ref portraits</text>
+
+        <!-- Zone 2 Nodes -->
+        <!-- 4. Phase 3: Keyframe Stills -->
+        <rect x="372" y="68" width="216" height="52" rx="6" fill="#15121b"/>
+        <rect x="372" y="68" width="216" height="52" rx="6" fill="#211e28" stroke="#494454" stroke-width="1"/>
+        <text x="480" y="90" fill="#e7e0ee" font-size="12" font-weight="600" font-family="'Sora', system-ui, sans-serif" text-anchor="middle">Phase 3: Keyframe Stills</text>
+        <text x="480" y="106" fill="#cbc3d7" font-size="9" font-family="'Geist Mono', ui-monospace, monospace" text-anchor="middle">Imagen 3 · portrait-conditioned</text>
+
+        <!-- 5. Phase 4: Motion & Clips (Focal Accent 1) -->
+        <rect x="372" y="160" width="216" height="52" rx="6" fill="#15121b"/>
+        <rect x="372" y="160" width="216" height="52" rx="6" fill="#a078ff" stroke="#d0bcff" stroke-width="1.4" fill-opacity="0.12"/>
+        <text x="480" y="182" fill="#e7e0ee" font-size="12" font-weight="600" font-family="'Sora', system-ui, sans-serif" text-anchor="middle">Phase 4: Motion &amp; Clips</text>
+        <text x="480" y="198" fill="#d0bcff" font-size="9" font-family="'Geist Mono', ui-monospace, monospace" text-anchor="middle">Veo 3.1 Fast · 9:16 video</text>
+
+        <!-- 6. Phase 5a: Word Captions -->
+        <rect x="372" y="252" width="216" height="52" rx="6" fill="#15121b"/>
+        <rect x="372" y="252" width="216" height="52" rx="6" fill="#211e28" stroke="#494454" stroke-width="1"/>
+        <text x="480" y="274" fill="#e7e0ee" font-size="12" font-weight="600" font-family="'Sora', system-ui, sans-serif" text-anchor="middle">Phase 5a: Word Captions</text>
+        <text x="480" y="290" fill="#cbc3d7" font-size="9" font-family="'Geist Mono', ui-monospace, monospace" text-anchor="middle">Faster-Whisper · .ass timestamps</text>
+
+        <!-- Zone 3 Node -->
+        <!-- 7. Phase 5b: Master Assembly -->
+        <rect x="684" y="68" width="216" height="52" rx="6" fill="#15121b"/>
+        <rect x="684" y="68" width="216" height="52" rx="6" fill="#211e28" stroke="#4cd7f6" stroke-width="1.2"/>
+        <text x="792" y="90" fill="#e7e0ee" font-size="12" font-weight="600" font-family="'Sora', system-ui, sans-serif" text-anchor="middle">Phase 5b: Master Delivery</text>
+        <text x="792" y="106" fill="#4cd7f6" font-size="9" font-family="'Geist Mono', ui-monospace, monospace" text-anchor="middle">FFmpeg · final_story.mp4</text>
+
+        <!-- 8. State & Queue Engine (Focal Accent 2 / Store) -->
+        <rect x="684" y="424" width="216" height="56" rx="6" fill="#15121b"/>
+        <rect x="684" y="424" width="216" height="56" rx="6" fill="#a078ff" stroke="#d0bcff" stroke-width="1.4" fill-opacity="0.12"/>
+        <text x="792" y="448" fill="#e7e0ee" font-size="12" font-weight="600" font-family="'Sora', system-ui, sans-serif" text-anchor="middle">State &amp; Queue Engine</text>
+        <text x="792" y="464" fill="#d0bcff" font-size="9" font-family="'Geist Mono', ui-monospace, monospace" text-anchor="middle">pipeline_state.json · story_queue</text>
+
+        <!-- Legend strip -->
+        <line x1="36" y1="532" x2="924" y2="532" stroke="#e7e0ee" stroke-width="0.8" stroke-opacity="0.14"/>
+        <text x="36" y="556" fill="#cbc3d7" font-size="8" font-family="'Geist Mono', ui-monospace, monospace" letter-spacing="0.14em">LEGEND</text>
+
+        <rect x="116" y="546" width="14" height="14" rx="3" fill="#211e28" stroke="#494454" stroke-width="1"/>
+        <text x="138" y="556" fill="#cbc3d7" font-size="9" font-family="'Geist Mono', ui-monospace, monospace">Pipeline Stage</text>
+
+        <rect x="260" y="546" width="14" height="14" rx="3" fill="#a078ff" stroke="#d0bcff" stroke-width="1.2" fill-opacity="0.12"/>
+        <text x="282" y="556" fill="#cbc3d7" font-size="9" font-family="'Geist Mono', ui-monospace, monospace">Core Engine / State</text>
+
+        <line x1="428" y1="553" x2="456" y2="553" stroke="#d0bcff" stroke-width="1.4" marker-end="url(#architecture-arrow-accent)"/>
+        <text x="466" y="556" fill="#cbc3d7" font-size="9" font-family="'Geist Mono', ui-monospace, monospace">Primary Flow</text>
+
+        <line x1="576" y1="553" x2="604" y2="553" stroke="#958ea0" stroke-width="1" stroke-dasharray="4,3" marker-end="url(#architecture-arrow)"/>
+        <text x="614" y="556" fill="#cbc3d7" font-size="9" font-family="'Geist Mono', ui-monospace, monospace">Atomic Checkpoint</text>
+
+        <line x1="748" y1="553" x2="776" y2="553" stroke="#4cd7f6" stroke-width="1.4" marker-end="url(#architecture-arrow-link)"/>
+        <text x="786" y="556" fill="#cbc3d7" font-size="9" font-family="'Geist Mono', ui-monospace, monospace">Master Export</text>
+      </svg>
